@@ -1,3 +1,222 @@
-body {
-  background-color: lightyellow;
+
+h2 {
+font-family: 'Poppins', sans-serif;
+margin:0 !important;
+  color: lightsalmon;
+  font-weight: 900;
+  font-size: 3vw;
+  text-transform: uppercase;
+
 }
+
+body {
+  background-color: tomato;
+}
+
+
+p {
+  text-decoration: none !important;
+}
+
+a{
+    text-decoration: none !important;
+    color: snow;
+    text-shadow:1px 1px #ff0000;
+}
+
+h1 {
+  font-family: 'Spicy Rice', cursive;
+  text-transform: uppercase;
+  font-size: 6vw;
+  color: lightsalmon;
+  text-shadow:2px 2px #ff0000;
+  margin:0px !important;
+  padding: 0.1px !important;
+  position:none !important;
+}
+
+
+* {
+    color: white;
+    font-size: 1.1em;
+    padding: 10px;
+    margin-top: 125px;
+    bottom:0;
+
+}
+
+#card1, #card2, #card3, #card4, #card5, #card6 {
+   width: 320px;
+   height: 320px;
+}
+
+#card1 {
+
+   font-family: 'Poppins', sans-serif;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background-color: #9bccdd;
+}
+
+#card2 {
+   position: absolute;
+   bottom: 60px;
+   right: 60px;
+   background-color: #58badd;
+}
+
+#card3 {
+   position: absolute;
+   bottom: 120px;
+   right: 120px;
+   background-color: #00a1e0;
+}
+
+#card4 {
+   position: absolute;
+   bottom: 180px;
+   right: 180px;
+   background-color: #9bccdd;
+}
+
+#card5 {
+   position: absolute;
+   bottom: 240px;
+   right: 240px;
+   background-color: #58badd;
+}
+
+#card6 {
+   position: absolute;
+   bottom: 300px;
+   right: 300px;
+   background-color: #00a1e0;
+}
+
+
+#card1 {
+ z-index: 1;
+}
+
+#card2 {
+ z-index: 10;
+}
+
+#card3 {
+ z-index: 1000;
+}
+
+#card4 {
+ z-index: 10000;
+}
+
+#card5 {
+ z-index: 100000;
+}
+
+#card6 {
+ z-index: 1000000;
+}
+
+i:hover {
+  opacity: 0%;
+
+}
+
+.container {
+  position: absolute;
+  width: 60em;/*Or whatever you want*/
+  right:-32%;
+  bottom: 5%;
+  margin: 0 auto !important;
+}
+.imageOne {
+  width: 61%;
+
+  -webkit-animation:spin 6s linear infinite;
+  -moz-animation:spin 6s linear infinite;
+  animation:spin 6s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+
+#card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover, #card6:hover {
+  width: 320px;
+  height: 320px;
+
+}
+
+#card1:hover {
+  display: inline-block;
+  background-color: red;
+  position: absolute;
+  padding: 10px;
+  z-index: 1000000000;
+}
+
+#card2:hover {
+  display: inline-block;
+  background-color: orange;
+  position: absolute;
+  padding: 10px;
+  z-index: 1000000000;
+}
+
+#card3:hover {
+  display: inline-block;
+  background-color: yellow;
+  position: absolute;
+  padding: 10px;
+  z-index: 1000000000;
+}
+
+#card4:hover {
+  display: inline-block;
+  background-color: green;
+  position: absolute;
+  padding: 10px;
+  z-index: 1000000000;
+}
+
+#card5:hover {
+  display: inline-block;
+  background-color: blue;
+  position: absolute;
+  padding: 10px;
+  z-index: 1000000000;
+}
+
+#card6:hover {
+  color: sienna !important;
+  display: inline-block;
+  background-color: purple;
+  position: absolute;
+  padding: 10px;
+  z-index: 1000000000;
+}
+
+
+
+/* #card1:hover {
+  background-color: red;
+}
+
+#card2:hover {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: yellow;
+  z-index: 100;
+}
+
+#card3:hover {
+
+  display: inline-block;
+  vertical-align: middle;
+  background-color: green;
+  z-index: 100;
+
+
+} */

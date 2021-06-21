@@ -1,0 +1,105 @@
+
+.stroke-text{
+  font-family: 'Spicy Rice', cursive;
+  text-transform: uppercase;
+  font-size: clamp(4.4rem, 9.8vw, 9.9rem);
+  text-align:center;
+  text-anchor:middle;
+  stroke-width:4px;
+  fill: tomato;
+  padding: 40px;
+  text-decoration: underline;
+
+
+}
+
+.thick{
+  stroke-width:15px;
+}
+
+.thicker{
+  stroke-width:22px;
+}
+
+.color1{
+  stroke: lavenderblush;
+  stroke-width:25px;
+}
+
+.color2{
+  stroke: mistyrose;
+}
+
+.color3{
+  stroke: lightpink;
+}
+
+.color4{
+  stroke: slateblue;
+  stroke-width: .2vw;
+}
+
+/* h1 {
+
+  padding: 15px;
+  font-family: 'Spicy Rice', cursive;
+  font-size: 150px;
+  color: darkgoldenrod;
+  text-align: center;
+  margin:auto;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+} */
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: snow;
+  text-align: center;
+
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  line-height: 40px;
+}
+
+h3 {
+  line-height: 1.3em;
+
+}
+
+.wavy {
+  text-decoration: 2px underline wavy;
+}
+
+
+a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: tomato;
+  padding: 10px;
+  text-shadow: -1px -1px 0 lightpink, 1px -1px 0 lightpink, -1px 1px 0 lightpink, 1px 1px 0 lightpink;
+  border: 3px solid slateblue;
+  color: white;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+ }
+
+
+img {
+  max-width: 50%;
+}
+
+#wrapper {
+
+
+  padding:clamp(.2rem, 2.4vw, 3.4rem);
+
+
+}

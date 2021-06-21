@@ -1,0 +1,70 @@
+<div class="center">
+<div id="card1"></div>
+<div id="card2"></div>
+<div id="card3"></div>
+</div>
+
+
+test
+
+
+
+#card1, #card2, #card3 {
+    width: 550px;
+    height: 550px;
+}
+
+#card1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #9bccdd;
+}
+
+#card2 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    background-color: #58badd;
+}
+
+#card3 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: #00a1e0;
+}
+
+#card1 {
+	z-index: 3;
+}
+
+#card2 {
+	z-index: 2;
+}
+
+#card3 {
+	z-index: 1;
+}
+
+#card1:hover {
+  background-color: red;
+}
+
+#card3:hover {
+
+  display: inline-block;
+  vertical-align: middle;
+  background-color: green;
+  z-index: 100;
+
+
+}
+
+.center {
+position: absolute;
+left: 30%;
+top: 30%;
+transform: translate(-20%, -20%);
+padding: 10px;
+}
