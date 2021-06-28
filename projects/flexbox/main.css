@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex-container {
+  background: thistle;
+  width: 1000px;
+  height: 100px;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+  align-items: center;
+  align-content: space-around;
+
+
+}
+
+.item {
+  background: skyblue;
+  width: 150px;
+  height:50px;
+  margin: 5px;
+
+}
