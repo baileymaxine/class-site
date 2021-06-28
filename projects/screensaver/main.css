@@ -279,8 +279,8 @@ border: 4px solid darkcyan;
 }
 
 .smile2 {
-  background-image: linear-gradient(steelblue, lightsteelblue, lightcyan);
-  border: 4px solid steelblue;
+  background-image: linear-gradient(#C877DC, #E5B1E5, #F6E5F6);
+  border: 4px solid #C877DC;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -292,8 +292,8 @@ border: 4px solid darkcyan;
 
 
 .eye3 {
-background-image: linear-gradient(#3333A2, #5C5CB5);
-  border: 4px solid steelblue;
+background-image: linear-gradient(#8733a2, #b05cb5);
+  border: 4px solid #C877DC;
     border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -304,8 +304,8 @@ background-image: linear-gradient(#3333A2, #5C5CB5);
 }
 
 .eye4 {
-background-image: linear-gradient(#3333A2, #5C5CB5);
-    border: 4px solid steelblue;
+background-image: linear-gradient(#8733a2, #b05cb5);
+    border: 4px solid #C877DC;
     border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -317,8 +317,8 @@ background-image: linear-gradient(#3333A2, #5C5CB5);
 
 .mouth2 {
   position: absolute;
-background-image: linear-gradient(#3333A2, #5C5CB5);
-    border: 4px solid steelblue;
+background-image: linear-gradient(#8733a2, #b05cb5);
+    border: 4px solid #C877DC;
 width: 110px;
 height: 60px;
 border-radius: 7px 7px 100px 100px;
