@@ -22,11 +22,6 @@ p {
   font-family: 'Rubik Mono One', sans-serif;
 }
 
-a{
-  color: white;
-  text-decoration: none;
-}
-
 p:hover {
   color: orange;
   text-decoration: none;
