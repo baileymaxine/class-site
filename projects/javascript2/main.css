@@ -1,0 +1,18 @@
+*{
+  box-sizing:content-box;
+}
+
+body {
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+.marquee {
+  width: 300px;
+  /* the plug in works for responsive layouts so */
+  overflow: hidden;
+  border: 1px solid #ccc;
+}

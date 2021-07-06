@@ -1,0 +1,51 @@
+*{
+  box-sizing:content-box;
+}
+
+html {
+  font-size: 30px;
+}
+
+body {
+  margin: 0;
+  font-size: 10px;
+}
+
+img{
+  max-width: 100%;
+}
+
+.box {
+  background: lavenderblush;
+  font-size: 1rem;
+  max-width: 30rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  background: sienna;
+  width: 30%;
+  height: 400px;
+  margin: 5px;
+}
+
+@media screen and (max-width:800px) {
+  body {
+    background: tomato;
+
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,358 @@
+*{
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(darksalmon,lightgoldenrodyellow);
+}
+
+img{
+  max-width: 100%;
+}
+
+
+p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.container {
+  position: absolute;
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 290px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+padding: 80px 20px 20px 20px;
+  z-index: -1000;
+  animation: move 16s infinite alternate linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes move {
+
+
+0%{
+    opacity: 100%;
+    transform: translateY(300px);
+}
+
+49%{
+opacity: 100%;
+transform: translateY(0);
+}
+
+50%{
+  opacity: 0;
+  transform: translateY(0);
+
+}
+100%{
+  opacity: 0;
+  transform: translateY(0);
+}
+
+}
+
+.container2 {
+  position: absolute;
+  margin: auto;
+  margin-top: 350px;
+  margin-left: 10px;
+  width: 290px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+padding: 80px 20px 20px 20px;
+  z-index: -1000;
+  animation: move2 16s infinite alternate linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes move2 {
+
+  0%{
+    opacity: 0;
+    transform: translateY(0);
+
+  }
+  49%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50%{
+    opacity: 0;
+  }
+
+  51%{
+      opacity: 0;
+      transform: translateY(-300px);
+  }
+  53%{
+      opacity: 100%;
+      transform: translateY(-300px);
+  }
+
+  100%{
+opacity: 100%;
+  transform: translateY(0);
+  }
+}
+
+
+.fire {
+  position: absolute;
+  right: 40%;
+  top: 20%;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  z-index: 1000000;
+}
+
+.fire-middle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-origin: bottom;
+  animation: jump 3s ease-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  z-index: 10;
+}
+
+.fire-middle .main-fire {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(orangered, orange);
+  transform: scaleX(0.8) rotate(45deg);
+  border-radius: 0 40% 60% 40%;
+  filter: drop-shadow(0 0 10px #d43322);
+}
+
+.fire-right {
+  height: 105%;
+  width: 105%;
+  position: absolute;
+  animation: flicker2 2s ease-out 0;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  z-index: 1;
+}
+
+.fire-right .main-fire {
+  position: absolute;
+  top: 15%;
+  right: -25%;
+  width: 80%;
+  height: 80%;
+  background-image: radial-gradient(darkred, orangered);
+  transform: scaleX(0.8) rotate(45deg);
+  border-radius: 0 40% 60% 40%;
+  filter: drop-shadow(0 0 10px #d43322);
+}
+
+
+.fire-left {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation: flicker 3s ease-out 0;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  z-index: 1;
+}
+
+.fire-left .main-fire {
+  position: absolute;
+  top: 14%;
+  left: -20%;
+  width: 80%;
+  height: 80%;
+  background-image: radial-gradient(darkred, orangered);
+  transform: scaleX(0.8) rotate(45deg);
+  border-radius: 0 40% 60% 40%;
+  filter: drop-shadow(0 0 10px #d43322);
+}
+
+.fire-small {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-origin: bottom;
+  animation: flicker 3s ease-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  z-index: 1;
+}
+
+.fire-small .main-fire {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  background-image: radial-gradient(orange, orangered);
+  transform: scaleX(0.8) rotate(45deg);
+  border-radius: 0 40% 60% 40%;
+  filter: drop-shadow(0 0 10px #d43322);
+}
+
+.fire-small2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-origin: bottom;
+  animation: flicker2 3s 2s ease-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.fire-small2 .main-fire {
+  position: absolute;
+  top: 18%;
+  left: -16%;
+  width: 80%;
+  height: 75%;
+  background-image: radial-gradient(orange, orangered);
+  transform: scaleX(0.8) rotate(14deg);
+  border-radius: 0 40% 60% 40%;
+  filter: drop-shadow(0 0 10px #d43322);
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    transform: skewX(0) scale(1);
+  }
+  50% {
+    transform: skewX(9deg) scale(0.9);
+  }
+}
+
+@keyframes flicker2 {
+  0%,
+  100% {
+    transform: skewX(0) scale(1);
+  }
+  50% {
+    transform: skewX(-9deg) scale(0.9);
+  }
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+  50%,
+  90% {
+    transform: scaleY(1.1);
+  }
+  75% {
+    transform: scaleY(0.95);
+  }
+  80% {
+    transform: scaleX(0.95);
+  }
+}
+
+.paper {
+  background: black;
+  margin: auto;
+  margin-top: 350px;
+  width: 300px;
+  height: 340px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+align-content:stretch;
+padding: 80px 20px 20px 20px;
+  filter: drop-shadow(0 0 30px lightgoldenrodyellow);
+  transform-origin: top;
+  animation: burn 8s infinite alternate linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes burn {
+
+  0%{
+    transform: scaleY(100px);
+  }
+
+  100%{
+    transform: scaleY(0);
+  }
+}
+
+
+#smoke {
+	position: absolute;
+  right: 50%;
+  top: 40%;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  transform: rotate(180deg);
+  z-index: -1000;
+}
+
+
+#smoke span {
+  display: block;
+	position: absolute;
+	bottom: -35px; left: 50%; margin-left:-20px;
+	height: 0px; width: 0px;
+	border: 35px solid black;
+	border-radius: 35px;
+	left: -14px; opacity: 0;
+	transform: scale(0.2);
+}
+
+@keyframes smokeL {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: .5; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(2) translate(-20px, -130px) }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: .5; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(2) translate(20px, -130px) }
+}
+
+#smoke .s0
+{ animation: smokeL 10s 0s infinite }
+#smoke .s1
+{ animation: smokeR 10s 1s infinite }
+#smoke .s2
+{ animation: smokeL 10s 2s infinite }
+#smoke .s3
+{ animation: smokeR 10s 3s infinite }
+#smoke .s4
+{ animation: smokeL 10s 4s infinite }
+#smoke .s5
+{ animation: smokeR 10s 5s infinite }
+#smoke .s6
+{ animation: smokeL 10s 6s infinite }
+#smoke .s7
+{ animation: smokeR 10s 7s infinite }
+#smoke .s8
+{ animation: smokeL 10s 8s infinite }
+#smoke .s9
+{ animation: smokeR 10s 9s infinite }

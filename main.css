@@ -1,226 +1,222 @@
 
-h2 {
-font-family: 'Poppins', sans-serif;
-margin:0 !important;
-  color: lightsalmon;
-  font-weight: 900;
-  font-size: 3vw;
+.stroke-text{
+  font-family: 'Spicy Rice', cursive;
   text-transform: uppercase;
+  font-size: clamp(4.4rem, 9.8vw, 9.9rem);
+  text-align:center;
+  text-anchor:middle;
+  stroke-width:4px;
+  fill: tomato;
+  padding: 40px;
+  text-decoration: underline;
+
 
 }
+
+.thick{
+  stroke-width:15px;
+}
+
+.thicker{
+  stroke-width:22px;
+}
+
+.color1{
+  stroke: lavenderblush;
+  stroke-width:25px;
+}
+
+.color2{
+  stroke: mistyrose;
+}
+
+.color3{
+  stroke: lightpink;
+}
+
+.color4{
+  stroke: slateblue;
+  stroke-width: .2vw;
+}
+
+/* h1 {
+
+  padding: 15px;
+  font-family: 'Spicy Rice', cursive;
+  font-size: 150px;
+  color: darkgoldenrod;
+  text-align: center;
+  margin:auto;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+} */
 
 
 body {
-  background-color: tomato;
-}
+  font-family: 'Poppins', sans-serif;
+  background-color: snow;
+  text-align: center;
 
+}
 
 p {
-  text-decoration: none !important;
+  font-family: 'Poppins', sans-serif;
+  line-height: 40px;
 }
 
-a{
-    text-decoration: none !important;
-    color: peachpuff;
-    text-shadow:1px 1px #ff0000;
+h3 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.3em;
+
 }
 
-h1 {
-  font-family: 'Spicy Rice', cursive;
+b {
+  font-family: 'Poppins', sans-serif;
+  text-decoration:underline;
+
+}
+
+.wavy {
+  text-decoration: 2px underline wavy;
+}
+
+.flex-container{
+
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.item {
+  background-color: tomato;
+  padding: 10px;
+  text-shadow: -1px -1px 0 lightpink, 1px -1px 0 lightpink, -1px 1px 0 lightpink, 1px 1px 0 lightpink;
+  border: 3px solid slateblue;
+  color: white;
+  width: 150px;
+  height:auto;
+  margin: 5px;
+
+}
+
+.flex-container2{
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.item2 {
+  background-color: slateblue;
+  padding: 10px;
+  text-shadow: -1px -1px 0 lightpink, 1px -1px 0 lightpink, -1px 1px 0 lightpink, 1px 1px 0 lightpink;
+  border: 3px solid tomato;
+  color: white;
+  width: 150px;
+  height:auto;
+  margin: 5px;
+
+}
+
+a {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
-  font-size: 6.3vw;
-  color: lightsalmon;
-  text-shadow:2px 2px #ff0000;
-  margin:0px !important;
-  padding: 0.1px !important;
-  position:none !important;
+  text-decoration: none;
+  padding: 10px;
+  text-shadow: -1px -1px 0 lightpink, 1px -1px 0 lightpink, -1px 1px 0 lightpink, 1px 1px 0 lightpink;
 }
 
-
-* {
-    color: white;
-    font-size: 1.1em;
-    padding: 10px;
-    margin-top: 125px;
-    bottom:0;
-
+a:hover {
+  color: slateblue;
 }
 
-#card1, #card2, #card3, #card4, #card5, #card6 {
-   width: 320px;
-   height: 320px;
-}
-
-#card1 {
-
-   font-family: 'Poppins', sans-serif;
-   position: absolute;
-   bottom: 0;
-   right: 0;
-   background-color: #9bccdd;
-}
-
-#card2 {
-   position: absolute;
-   bottom: 60px;
-   right: 60px;
-   background-color: #58badd;
-}
-
-#card3 {
-   position: absolute;
-   bottom: 120px;
-   right: 120px;
-   background-color: #00a1e0;
-}
-
-#card4 {
-   position: absolute;
-   bottom: 180px;
-   right: 180px;
-   background-color: #9bccdd;
-}
-
-#card5 {
-   position: absolute;
-   bottom: 240px;
-   right: 240px;
-   background-color: #58badd;
-}
-
-#card6 {
-   position: absolute;
-   bottom: 300px;
-   right: 300px;
-   background-color: #00a1e0;
-}
+/* img {
+  margin: 0 auto;
+  width: 9%;
+  z-index: 100;
+  animation: rotation 2s infinite linear;
+} */
 
 
-#card1 {
- z-index: 1;
-}
+#wrapper {
 
-#card2 {
- z-index: 10;
-}
 
-#card3 {
- z-index: 1000;
-}
+  padding:clamp(.2rem, 2.4vw, 3.4rem);
 
-#card4 {
- z-index: 10000;
-}
-
-#card5 {
- z-index: 100000;
-}
-
-#card6 {
- z-index: 1000000;
-}
-
-i:hover {
-  opacity: 0%;
 
 }
 
 .container {
-  position: absolute;
-  width: 60em;/*Or whatever you want*/
-  right:-32%;
-  bottom: 5%;
-  margin: 0 auto !important;
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
 }
 .imageOne {
-  width: 61%;
+  width: 51%;
 
-
-  -webkit-animation:spin 6s linear infinite;
-  -moz-animation:spin 6s linear infinite;
-  animation:spin 6s linear infinite;
+  -webkit-animation:spin 15s linear infinite;
+  -moz-animation:spin 15s linear infinite;
+  animation:spin 15s linear infinite;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
 
-
-
-
-#card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover, #card6:hover {
-  width: 320px;
-  height: 320px;
-
-}
-
-#card1:hover {
-  display: inline-block;
-  background-color: red;
+.imageTwo {
   position: absolute;
-  padding: 10px;
-  z-index: 1000000000;
-}
+  width:68px;
+  top: 30%;
+  left: 43.3%;
+  transform: translate(-30%, -30%);
+  animation: rotation 2s infinite linear;
 
-#card2:hover {
-  display: inline-block;
-  background-color: orange;
-  position: absolute;
-  padding: 10px;
-  z-index: 1000000000;
-}
-
-#card3:hover {
-  display: inline-block;
-  background-color: yellow;
-  position: absolute;
-  padding: 10px;
-  z-index: 1000000000;
-}
-
-#card4:hover {
-  display: inline-block;
-  background-color: green;
-  position: absolute;
-  padding: 10px;
-  z-index: 1000000000;
-}
-
-#card5:hover {
-  display: inline-block;
-  background-color: blue;
-  position: absolute;
-  padding: 10px;
-  z-index: 1000000000;
-}
-
-#card6:hover {
-  color: sienna !important;
-  display: inline-block;
-  background-color: purple;
-  position: absolute;
-  padding: 10px;
-  z-index: 1000000000;
 }
 
 
 
-/* #card1:hover {
-  background-color: red;
+
+.rotate {
+  animation: rotation 2s infinite linear;
 }
 
-#card2:hover {
-  display: inline-block;
-  vertical-align: middle;
-  background-color: yellow;
-  z-index: 100;
-}
-
-#card3:hover {
-
-  display: inline-block;
-  vertical-align: middle;
-  background-color: green;
-  z-index: 100;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 
 
-} */
+
+
+
+/* .container{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        margin: 0 auto;
+    } */
+
+
+  /* .box{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.8;
+  }
+  .stack-top{
+      z-index: 9;
+      margin: 20px;
+  } */
